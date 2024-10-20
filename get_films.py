@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify
 
 from db import get_connection
 
-get_films_blueprint = Blueprint('get_films', name)
+get_films_blueprint = Blueprint('get_films', __name__)
 
 
 @get_films_blueprint.route('/api/v1/films', methods=['GET'])
