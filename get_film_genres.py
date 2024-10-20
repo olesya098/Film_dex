@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify
 
 from db import get_connection
 
-get_film_genres_blueprint = Blueprint('get_film_genres', name)
+get_film_genres_blueprint = Blueprint('get_film_genres', __name__)
 
 @get_film_genres_blueprint.route('/api/v1/film_with_genre/<int:genre_id>')
 def get_film_genres(genre_id):
