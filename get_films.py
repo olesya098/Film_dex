@@ -32,8 +32,7 @@ def get_films():
                     'country': film[6],
                     'category_film': category_film,
                     'description': film[8],
-                    'link': film[9],
-                    'category': film[10]
+                    'link': film[9]
                 }
             )
 
@@ -69,8 +68,7 @@ def get_film(film_id):
             'country': film[6],
             'category_film': category_film,
             'description': film[8],
-            'link': film[9],
-            'category': film[10]
+            'link': film[9]
         }
 
         return jsonify(film_json)
